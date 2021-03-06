@@ -1,15 +1,12 @@
 <?php
-class Exemplo
-{
+class Exemplo {
    public static $attr = "atributo 1 ";
    public  $attr2 = "atributo 2 ";
 
-   public static function metodo()
-   {
+   public static function metodo() {
       echo 'eu sou um metódo estatico';
    }
-   public function metodo2()
-   {
+   public function metodo2() {
       echo 'eu sou um metódo comum ';
    }
 }

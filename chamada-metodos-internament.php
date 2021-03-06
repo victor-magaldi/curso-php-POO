@@ -1,6 +1,5 @@
 <?php
-class Funcionario
-{
+class Funcionario {
     //atributos
     public $nome = null;
     public $telefone = null;
@@ -10,48 +9,38 @@ class Funcionario
 
 
     // getters e setters com overloading 
-    function __set($atributo, $valor)
-    {
+    function __set($atributo, $valor) {
         $this->$atributo = $valor;
     }
-    function __get($atributo)
-    {
+    function __get($atributo) {
         return $this->$atributo;
     }
 
     //getter e setters
-    function setNome($nome)
-    {
+    function setNome($nome) {
         $this->nome = $nome;
     }
-    function setTelefone($telefone)
-    {
+    function setTelefone($telefone) {
         $this->telefone = $telefone;
     }
-    function setNumFilhos($numFilhos)
-    {
+    function setNumFilhos($numFilhos) {
         $this->numFilhos = $numFilhos;
     }
-    function getNome()
-    {
+    function getNome() {
         return $this->nome;
     }
-    function getTelefone()
-    {
+    function getTelefone() {
         return $this->telefone;
     }
-    function getNumFilhos()
-    {
+    function getNumFilhos() {
         return $this->numFilhos;
     }
 
     //metodos 
-    function resumirCardfunc()
-    {
+    function resumirCardfunc() {
         return $this->__get('nome') . " possui" . $this->__get('numFilhos') . " filhos esse é o resumo do card";
     }
-    function modificaNumFilhos($num)
-    {
+    function modificaNumFilhos($num) {
         $this->numFilhos = $num;
     }
 }

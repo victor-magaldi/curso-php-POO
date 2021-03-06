@@ -1,22 +1,17 @@
 <?php
 
-class Pessoa
-{
+class Pessoa {
     public $nome = null;
-    public function __construct($nome)
-    {
+    public function __construct($nome) {
         $this->nome = $nome;
     }
-    public function __destruct()
-    {
+    public function __destruct() {
         echo 'objeto removido';
     }
-    function __get($attr)
-    {
+    function __get($attr) {
         return $this->$attr;
     }
-    function correr()
-    {
+    function correr() {
         echo $this->nome . 'está correndo ';
     }
 }

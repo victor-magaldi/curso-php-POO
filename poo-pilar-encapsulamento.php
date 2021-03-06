@@ -1,25 +1,20 @@
 <?php
-class Pai
-{
+class Pai {
    private $nome = 'victor';
    protected $sobrenome = 'magaldi';
    public $humor = 'feliz';
 
-   public function __get($name)
-   {
+   public function __get($name) {
       return $this->$name;
    }
-   public function __set($attr, $value)
-   {
+   public function __set($attr, $value) {
       $this->$attr = $value;
    }
 
-   public function getNome()
-   {
+   public function getNome() {
       return $this->nome;
    }
-   public function setNome($novoNome)
-   {
+   public function setNome($novoNome) {
       if (strlen($novoNome) >= 3) {
          $this->nome = $novoNome;
       }

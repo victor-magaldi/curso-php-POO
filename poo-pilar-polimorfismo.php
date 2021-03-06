@@ -1,52 +1,41 @@
 <?php
-class Veiculo
-{
+class Veiculo {
       public $placa = null;
       public $cor = null;
-      function acelerar()
-      {
+      function acelerar() {
             echo 'acelerou';
       }
-      function trocarmarcha()
-      {
+      function trocarmarcha() {
             echo 'trocar marcha com a mão';
       }
 }
-class Carro extends Veiculo
-{
+class Carro extends Veiculo {
       public $tetoSolar = true;
 
-      public function __construct($placa, $cor)
-      {
+      public function __construct($placa, $cor) {
             $this->placa = $placa;
             $this->cor = $cor;
       }
 
-      function abrirTetoSolar()
-      {
+      function abrirTetoSolar() {
             echo 'abrir teto solar ';
       }
-      function mudarPosicaoVolante()
-      {
+      function mudarPosicaoVolante() {
             echo 'alterar a posição do volante';
       }
 }
-class Moto extends Veiculo
-{
-      public function __construct($placa, $cor)
-      {
+class Moto extends Veiculo {
+      public function __construct($placa, $cor) {
             $this->placa = $placa;
             $this->cor = $cor;
       }
 
       public $contraPesoGuiado = true;
-      function empinar()
-      {
+      function empinar() {
             echo 'empinar';
       }
       //basta apenas sobreescrever o metodo para aplicar o polimorfismo
-      function trocarmarcha()
-      {
+      function trocarmarcha() {
             echo 'trocar marcha com a pé';
       }
 }
